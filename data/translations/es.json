@@ -1,0 +1,92 @@
+{
+  "menu": {
+    "home": "Inicio",
+    "catalog": "Catálogo",
+    "expertise": "Experiencia",
+    "logistics": "Logística",
+    "contact": "Contacto"
+  },
+  "home": {
+    "hero_title": "Aceitunas de Tacna",
+    "hero_subtitle": "El auténtico sabor del Perú",
+    "hero_tagline": "Exportación directa a América Latina",
+    "cta_quote": "Solicitar presupuesto",
+    "cta_discover": "Descubrir nuestros lotes",
+    "markets": "Colombia · Chile · Ecuador · Bolivia"
+  },
+  "origin": {
+    "tag": "Valle de Tacna",
+    "title": "El terroir único del desierto fértil",
+    "desc1": "En el extremo sur del Perú, bañada por el Pacífico y alimentada por las aguas andinas, Tacna produce aceitunas de una calidad excepcional. Nuestro stock permanente garantiza disponibilidad inmediata para los compradores de América Latina.",
+    "desc2": "Logística controlada – puertos de Ilo y Matarani, conexiones rápidas a Colombia, Chile y toda la región.",
+    "desc3": "Trazabilidad completa – del árbol a la exportación."
+  },
+  "products": {
+    "title": "Nuestros lotes de aceitunas",
+    "subtitle": "Disponibles a granel, en salmuera o aceite, embalaje adaptado para la exportación.",
+    "black": {
+      "name": "Aceitunas negras",
+      "desc": "Variedad Sevillana y Criolla, madurez plena, carne firme. Ideales para conserva y transformación.",
+      "long_desc": "Nuestras aceitunas negras se cosechan en plena madurez en el valle de Tacna. Su carne firme y sabor afrutado las hacen ideales para la transformación (tapenas, conservas) o consumo directo."
+    },
+    "green": {
+      "name": "Aceitunas verdes",
+      "desc": "Cosecha temprana, crujientes y sabrosas. Perfectas para aperitivo y exportación de alta gama.",
+      "long_desc": "Cosechadas antes de la madurez completa, estas aceitunas verdes ofrecen una textura crujiente y un sabor ligeramente almendrado. Ideales para aperitivos, relleno o exportación de alta gama."
+    },
+    "oil": {
+      "name": "Aceite de oliva virgen",
+      "desc": "Primera presión en frío, stock en cubas de acero inox. Envasado posible en cisternas o bidones.",
+      "long_desc": "Primera presión en frío, extraída dentro de las 24 horas posteriores a la cosecha. Nuestro aceite destaca por su frutado verde, aromas a alcachofa y hierba fresca. Ideal para la industria alimentaria y tiendas gourmet."
+    },
+    "bulk": {
+      "name": "Granel y logística",
+      "desc": "Barriles de 200L, cajas de plástico, bolsas al vacío. Volúmenes adaptados a importadores.",
+      "long_desc": "Para transformadores e importadores, ofrecemos lotes a granel de diferentes tamaños, con trazabilidad completa. Adaptamos el envasado a sus necesidades: barriles, cajas de plástico, bolsas al vacío, big bags."
+    }
+  },
+  "markets": {
+    "title": "Mercados prioritarios",
+    "subtitle": "Entregamos principalmente en América Latina, con presencia reforzada en estos países:",
+    "colombia": "Colombia",
+    "chile": "Chile",
+    "ecuador": "Ecuador",
+    "bolivia": "Bolivia",
+    "peru": "Perú",
+    "other": "Cualquier otro país de América Latina bajo pedido."
+  },
+  "why": {
+    "title": "¿Por qué nosotros?",
+    "stock": "toneladas disponibles",
+    "exp": "años de experiencia",
+    "varieties": "variedades",
+    "traceability": "trazable",
+    "stock_desc": "en stock permanente en Tacna",
+    "exp_desc": "exportación a América Latina",
+    "varieties_desc": "de mesa y aceite",
+    "traceability_desc": "origen controlado"
+  },
+  "contact": {
+    "title": "Hablemos de negocios",
+    "name": "Nombre / Empresa",
+    "email": "Correo electrónico",
+    "country": "País de destino",
+    "message": "Cantidad buscada, variedad...",
+    "send": "Enviar solicitud",
+    "hours": "Horario de atención",
+    "hours_detail": "Lun-Vie 9h-18h (GMT-5)",
+    "response": "Respuesta en 24 horas hábiles"
+  },
+  "footer": {
+    "copyright": "© 2025 — Exportador de aceitunas peruanas a América Latina",
+    "location": "Tacna · Perú · 🇵🇪"
+  },
+  "catalog": {
+    "title": "Nuestra gama de exportación",
+    "subtitle": "Aceitunas y aceites excepcionales, envasados para la exportación",
+    "request_quote": "Solicitar presupuesto",
+    "certifications": {
+      "title": "Nuestras certificaciones"
+    }
+  }
+}

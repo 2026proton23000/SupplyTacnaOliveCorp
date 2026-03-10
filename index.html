@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olives de Tacna - Exportateur vers l'Amérique Latine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">OLIVAS DE TACNA<span data-i18n="home.hero_subtitle">l'authentique saveur du Pérou</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" data-i18n="menu.home">Accueil</a></li>
+      <li><a href="catalogo.html" data-i18n="menu.catalog">Catalogue</a></li>
+      <li><a href="expertise.html" data-i18n="menu.expertise">Expertise</a></li>
+      <li><a href="logistica.html" data-i18n="menu.logistics">Logistique</a></li>
+      <li><a href="#contact" data-i18n="menu.contact">Contact</a></li>
+      <li><button class="lang-switch" data-lang="fr">FR</button> <button class="lang-switch" data-lang="es">ES</button></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="accueil" class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1 data-i18n="home.hero_title">OLIVES DE TACNA</h1>
+        <p><i class="fas fa-map-pin"></i> <span data-i18n="home.hero_tagline">Export direct vers l'Amérique Latine</span></p>
+        <div>
+          <a href="#contact" class="btn" data-i18n="home.cta_quote">Demander un devis</a>
+          <a href="catalogo.html" class="btn btn-outline" data-i18n="home.cta_discover">Découvrir nos lots</a>
+        </div>
+        <div style="margin-top: 2rem; font-size: 1.1rem;">
+          <i class="fas fa-check-circle" style="color: var(--terracotta);"></i> <span data-i18n="home.markets">Colombie · Chili · Équateur · Bolivie</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Origine -->
+  <section id="origine" class="section-light fade-in">
+    <div class="container">
+      <div class="origine-grid">
+        <div>
+          <span class="tag"><i class="fas fa-leaf"></i> <span data-i18n="origin.tag">Vallée de Tacna</span></span>
+          <h2 data-i18n="origin.title">Le terroir unique du désert fertile</h2>
+          <p style="font-size: 1.2rem; margin: 1.5rem 0;" data-i18n="origin.desc1">À l'extrême sud du Pérou, baignée par le Pacifique et nourrie par les eaux andines, Tacna produit des olives d'une qualité exceptionnelle. Notre stock permanent garantit une disponibilité immédiate pour les acheteurs d'Amérique latine.</p>
+          <p><i class="fas fa-truck" style="color: var(--terracotta); margin-right: 0.5rem;"></i> <strong data-i18n="origin.desc2">Logistique maîtrisée – ports d'Ilo et Matarani, liaisons rapides vers la Colombie, le Chili et toute la région.</strong></p>
+          <p><i class="fas fa-seedling" style="color: var(--terracotta); margin-right: 0.5rem;"></i> <strong data-i18n="origin.desc3">Traçabilité complète – de l'arbre à l'export.</strong></p>
+        </div>
+        <div class="origine-image">
+          <img src="https://images.unsplash.com/photo-1574071323195-83521d52f3e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Oliveraie de Tacna" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produits (aperçu) -->
+  <section id="produits" class="section-dark fade-in">
+    <div class="container">
+      <h2 data-i18n="products.title">Nos lots d'olives</h2>
+      <p style="font-size: 1.2rem; max-width: 700px;" data-i18n="products.subtitle">Disponibles en vrac, saumure ou huile, conditionnement adapté à l'export.</p>
+      <div class="produits-grid">
+        <div class="card">
+          <i class="fas fa-circle" style="color:#2c3e2c;"></i>
+          <h3 data-i18n="products.black.name">Olives noires</h3>
+          <p data-i18n="products.black.desc">Variété Sevillana et Criolla, pleine maturité, chair ferme. Idéales pour conserve et transformation.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-circle" style="color:#86a788;"></i>
+          <h3 data-i18n="products.green.name">Olives vertes</h3>
+          <p data-i18n="products.green.desc">Récolte précoce, cassantes et savoureuses. Parfaites pour apéritif et export haut de gamme.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-tint"></i>
+          <h3 data-i18n="products.oil.name">Huile d'olive vierge</h3>
+          <p data-i18n="products.oil.desc">Première pression à froid, stock en cuves inox. Conditionnement possible en citernes ou bidons.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-boxes"></i>
+          <h3 data-i18n="products.bulk.name">Vrac & logistique</h3>
+          <p data-i18n="products.bulk.desc">Barils de 200L, caisses plastique, sacs sous vide. Volumes adaptés aux importateurs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marchés clés -->
+  <section id="marches" class="section-light fade-in">
+    <div class="container">
+      <h2 data-i18n="markets.title">Marchés prioritaires</h2>
+      <p data-i18n="markets.subtitle">Nous livrons principalement en Amérique latine, avec une présence renforcée dans ces pays :</p>
+      <div class="marchés-grid">
+        <div class="pays-item"><i class="fas fa-flag" style="color:#fedb5f;"></i><h4 data-i18n="markets.colombia">Colombie</h4><span>Bogotá · Barranquilla</span></div>
+        <div class="pays-item"><i class="fas fa-flag" style="color:#d52b1e;"></i><h4 data-i18n="markets.chile">Chili</h4><span>Santiago · Valparaíso</span></div>
+        <div class="pays-item"><i class="fas fa-flag" style="color:#ffcd00;"></i><h4 data-i18n="markets.ecuador">Équateur</h4><span>Guayaquil · Quito</span></div>
+        <div class="pays-item"><i class="fas fa-flag" style="color:#007934;"></i><h4 data-i18n="markets.bolivia">Bolivie</h4><span>La Paz · Santa Cruz</span></div>
+        <div class="pays-item"><i class="fas fa-flag" style="color:#0033a0;"></i><h4 data-i18n="markets.peru">Pérou</h4><span>Lima · Tacna</span></div>
+      </div>
+      <p style="text-align: center; margin-top: 3rem; font-weight: 600;" data-i18n="markets.other">Et tout autre pays d'Amérique latine sur demande.</p>
+    </div>
+  </section>
+
+  <!-- Pourquoi nous -->
+  <section class="section-dark fade-in">
+    <div class="container">
+      <h2 data-i18n="why.title">Pourquoi nous ?</h2>
+      <div class="why-grid">
+        <div class="why-item"><span class="number">+150</span><h4 data-i18n="why.stock">tonnes disponibles</h4><p data-i18n="why.stock_desc">en stock permanent à Tacna</p></div>
+        <div class="why-item"><span class="number">12</span><h4 data-i18n="why.exp">ans d'expérience</h4><p data-i18n="why.exp_desc">export vers l'Amérique latine</p></div>
+        <div class="why-item"><span class="number">5</span><h4 data-i18n="why.varieties">variétés</h4><p data-i18n="why.varieties_desc">de table et à huile</p></div>
+        <div class="why-item"><span class="number">100%</span><h4 data-i18n="why.traceability">traçable</h4><p data-i18n="why.traceability_desc">origine contrôlée</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section-light fade-in">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2 style="margin-top:0;" data-i18n="contact.title">Parlons affaires</h2>
+          <p><i class="fas fa-phone-alt"></i> +51 1 234 5678</p>
+          <p><i class="fas fa-envelope"></i> export@olivastacna.pe</p>
+          <p><i class="fas fa-map-marker-alt"></i> Tacna, Pérou — Zona Franca</p>
+          <div style="margin: 2rem 0;">
+            <h4 data-i18n="contact.hours">Horaires d'attention</h4>
+            <p data-i18n="contact.hours_detail">Lun-Ven 9h-18h (GMT-5)</p>
+          </div>
+          <p><i class="fas fa-globe"></i> <span data-i18n="contact.response">Réponse sous 24h ouvrées</span></p>
+        </div>
+        <div>
+          <form id="contactForm" method="post">
+            <div class="form-group"><input type="text" name="name" placeholder="Nom / Entreprise" data-i18n-placeholder="contact.name" required></div>
+            <div class="form-group"><input type="email" name="email" placeholder="E-mail" data-i18n-placeholder="contact.email" required></div>
+            <div class="form-group"><input type="text" name="country" placeholder="Pays de destination" data-i18n-placeholder="contact.country"></div>
+            <div class="form-group"><textarea name="message" rows="4" placeholder="Quantité recherchée, variété..." data-i18n-placeholder="contact.message"></textarea></div>
+            <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> <span data-i18n="contact.send">Envoyer la demande</span></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="logo" style="color: var(--sand);">OLIVAS DE TACNA</div>
+      <div class="socials">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <p style="opacity: 0.7;" data-i18n="footer.copyright">© 2025 — Exportateur d'olives péruviennes vers l'Amérique latine</p>
+      <p style="font-size: 0.9rem;" data-i18n="footer.location">Tacna · Pérou · 🇵🇪</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/tracking.js"></script>
+  <script src="js/telegram.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

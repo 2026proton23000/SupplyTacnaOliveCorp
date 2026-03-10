@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue export - Olives de Tacna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Styles supplémentaires pour le catalogue */
+    .catalog-hero {
+      background: linear-gradient(135deg, #2b3a2b 0%, #5f6f52 100%);
+      color: white;
+      padding: 120px 0 60px;
+      text-align: center;
+      margin-top: 80px;
+    }
+    .catalog-hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+    .catalog-hero p {
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin: 0 auto;
+      opacity: 0.9;
+    }
+    .product-section {
+      padding: 4rem 0;
+      border-bottom: 1px solid rgba(95,111,82,0.2);
+    }
+    .product-section:last-of-type {
+      border-bottom: none;
+    }
+    .product-grid-detailed {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+      margin-top: 2rem;
+    }
+    .product-image {
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: 0 25px 40px -15px rgba(0,0,0,0.3);
+      transition: transform 0.4s;
+    }
+    .product-image:hover {
+      transform: scale(1.02);
+    }
+    .product-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .product-details h3 {
+      font-size: 2.2rem;
+      color: var(--olive);
+      margin-bottom: 1rem;
+    }
+    .product-desc {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #4a5a4a;
+    }
+    .specs {
+      background: #f5f0e8;
+      padding: 1.5rem;
+      border-radius: 20px;
+      margin-bottom: 2rem;
+    }
+    .specs h4 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: var(--dark);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .specs table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .specs td {
+      padding: 0.5rem 0;
+      border-bottom: 1px dashed rgba(95,111,82,0.3);
+    }
+    .specs tr:last-child td {
+      border-bottom: none;
+    }
+    .specs td:first-child {
+      font-weight: 600;
+      color: var(--olive);
+      width: 40%;
+    }
+    .packaging-icons {
+      display: flex;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .packaging-icons span {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 0.9rem;
+      color: var(--dark);
+    }
+    .packaging-icons i {
+      font-size: 2rem;
+      color: var(--terracotta);
+      margin-bottom: 0.3rem;
+    }
+    .btn-product {
+      background: var(--olive);
+      color: white;
+      padding: 0.8rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      transition: 0.3s;
+      border: 2px solid transparent;
+    }
+    .btn-product:hover {
+      background: transparent;
+      border-color: var(--olive);
+      color: var(--olive);
+    }
+    @media (max-width: 900px) {
+      .product-grid-detailed {
+        grid-template-columns: 1fr;
+      }
+      .catalog-hero h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation (identique) -->
+  <nav class="navbar">
+    <div class="logo">OLIVAS DE TACNA<span data-i18n="home.hero_subtitle">l'authentique saveur du Pérou</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" data-i18n="menu.home">Accueil</a></li>
+      <li><a href="catalogo.html" data-i18n="menu.catalog">Catalogue</a></li>
+      <li><a href="expertise.html" data-i18n="menu.expertise">Expertise</a></li>
+      <li><a href="logistica.html" data-i18n="menu.logistics">Logistique</a></li>
+      <li><a href="index.html#contact" data-i18n="menu.contact">Contact</a></li>
+      <li><button class="lang-switch" data-lang="fr">FR</button> <button class="lang-switch" data-lang="es">ES</button></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+  </nav>
+
+  <!-- Hero catalogue -->
+  <div class="catalog-hero">
+    <div class="container">
+      <h1 data-i18n="catalog.title">Notre gamme export</h1>
+      <p data-i18n="catalog.subtitle">Des olives et huiles d'exception, conditionnées pour l'international</p>
+    </div>
+  </div>
+
+  <!-- Produit 1 : Olives noires -->
+  <section class="product-section">
+    <div class="container">
+      <div class="product-grid-detailed">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1572985817523-0b8f31d5d2c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Olives noires de Tacna" loading="lazy">
+        </div>
+        <div class="product-details">
+          <h3 data-i18n="products.black.name">Olives noires</h3>
+          <p class="product-desc" data-i18n="products.black.long_desc">Nos olives noires sont récoltées à pleine maturité dans la vallée de Tacna. Leur chair ferme et leur goût fruité en font un produit idéal pour la transformation (tapénades, conserves) ou la consommation directe.</p>
+          
+          <div class="specs">
+            <h4><i class="fas fa-clipboard-list"></i> Spécifications techniques</h4>
+            <table>
+              <tr><td>Variétés</td><td>Sevillana, Criolla, Azapa</td></tr>
+              <tr><td>Calibres</td><td>180/200, 200/220, 220/240 (pièces/kg)</td></tr>
+              <tr><td>Maturité</td><td>Noire 100%</td></tr>
+              <tr><td>Conditionnement</td><td>Saumure 8-10%, conservateurs naturels</td></tr>
+            </table>
+          </div>
+
+          <div class="packaging-icons">
+            <span><i class="fas fa-box"></i> Sacs sous vide</span>
+            <span><i class="fas fa-drum"></i> Barils 200L</span>
+            <span><i class="fas fa-archive"></i> Caisses 10kg</span>
+          </div>
+
+          <a href="index.html#contact" class="btn-product" data-i18n="catalog.request_quote">Demander un devis</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produit 2 : Olives vertes -->
+  <section class="product-section">
+    <div class="container">
+      <div class="product-grid-detailed">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1574071323195-83521d52f3e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Olives vertes de Tacna" loading="lazy">
+        </div>
+        <div class="product-details">
+          <h3 data-i18n="products.green.name">Olives vertes</h3>
+          <p class="product-desc" data-i18n="products.green.long_desc">Récoltées avant complète maturité, ces olives vertes offrent une texture croquante et une saveur légèrement amandée. Idéales pour l'apéritif, la farce ou l'export haut de gamme.</p>
+          
+          <div class="specs">
+            <h4><i class="fas fa-clipboard-list"></i> Spécifications techniques</h4>
+            <table>
+              <tr><td>Variétés</td><td>Sevillana, Gordal</td></tr>
+              <tr><td>Calibres</td><td>160/180, 180/200, 200/220</td></tr>
+              <tr><td>Dénoyauteur</td><td>Sur demande (farces possibles)</td></tr>
+              <tr><td>Conditionnement</td><td>Saumure, eau + sel, pasteurisation</td></tr>
+            </table>
+          </div>
+
+          <div class="packaging-icons">
+            <span><i class="fas fa-box"></i> Sacs sous vide</span>
+            <span><i class="fas fa-drum"></i> Barils 200L</span>
+            <span><i class="fas fa-jar"></i> Pots verre (B2B)</span>
+          </div>
+
+          <a href="index.html#contact" class="btn-product" data-i18n="catalog.request_quote">Demander un devis</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produit 3 : Huile d'olive vierge extra -->
+  <section class="product-section">
+    <div class="container">
+      <div class="product-grid-detailed">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1476362555312-ab9e108a0b7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Huile d'olive vierge extra" loading="lazy">
+        </div>
+        <div class="product-details">
+          <h3 data-i18n="products.oil.name">Huile d'olive vierge extra</h3>
+          <p class="product-desc" data-i18n="products.oil.long_desc">Première pression à froid, extraite dans les 24h suivant la récolte. Notre huile se distingue par son fruité vert, ses arômes d'artichaut et d'herbe fraîche. Idéale pour l'industrie alimentaire et les épiceries fines.</p>
+          
+          <div class="specs">
+            <h4><i class="fas fa-clipboard-list"></i> Spécifications techniques</h4>
+            <table>
+              <tr><td>Acidité</td><td>≤ 0.5%</td></tr>
+              <tr><td>Indice de peroxyde</td><td>≤ 12</td></tr>
+              <tr><td>Conditionnement</td><td>Citernes, bidons 20L, bouteilles verre</td></tr>
+              <tr><td>Certifications</td><td>Bio (sur demande)</td></tr>
+            </table>
+          </div>
+
+          <div class="packaging-icons">
+            <span><i class="fas fa-oil-can"></i> Bidons 20L</span>
+            <span><i class="fas fa-tank"></i> Citernes flexi</span>
+            <span><i class="fas fa-flask"></i> Échantillons</span>
+          </div>
+
+          <a href="index.html#contact" class="btn-product" data-i18n="catalog.request_quote">Demander un devis</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produit 4 : Vrac et lots industriels -->
+  <section class="product-section">
+    <div class="container">
+      <div class="product-grid-detailed">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1586528116311-6661c3f70295?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Conditionnement vrac" loading="lazy">
+        </div>
+        <div class="product-details">
+          <h3 data-i18n="products.bulk.name">Vrac & logistique</h3>
+          <p class="product-desc" data-i18n="products.bulk.long_desc">Pour les transformateurs et importateurs, nous proposons des lots en vrac de différentes tailles, avec une traçabilité complète. Nous adaptons le conditionnement à vos besoins : barils, caisses plastique, sacs sous vide, big bags.</p>
+          
+          <div class="specs">
+            <h4><i class="fas fa-clipboard-list"></i> Options disponibles</h4>
+            <table>
+              <tr><td>Barils alimentaires</td><td>200L avec double sachet</td></tr>
+              <tr><td>Caisses plastique</td><td>10kg, 20kg, empilables</td></tr>
+              <tr><td>Big bags</td><td>500kg à 1000kg (olives sèches)</td></tr>
+              <tr><td>Palettisation</td><td>Palettes EUR ou standard</td></tr>
+            </table>
+          </div>
+
+          <div class="packaging-icons">
+            <span><i class="fas fa-pallet"></i> Palettes</span>
+            <span><i class="fas fa-weight-hanging"></i> Big bags</span>
+            <span><i class="fas fa-boxes"></i> Lots sur mesure</span>
+          </div>
+
+          <a href="index.html#contact" class="btn-product" data-i18n="catalog.request_quote">Demander un devis</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section supplémentaire : certifications / qualités -->
+  <section class="section-light" style="padding: 3rem 0;">
+    <div class="container">
+      <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <h2 data-i18n="catalog.certifications.title">Nos certifications</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 3rem; margin-top: 2rem;">
+          <div><i class="fas fa-certificate" style="font-size: 3rem; color: var(--olive);"></i><br><strong>GlobalG.A.P.</strong></div>
+          <div><i class="fas fa-leaf" style="font-size: 3rem; color: var(--olive);"></i><br><strong>Agriculture biologique</strong></div>
+          <div><i class="fas fa-check-double" style="font-size: 3rem; color: var(--olive);"></i><br><strong>HACCP</strong></div>
+          <div><i class="fas fa-truck" style="font-size: 3rem; color: var(--olive);"></i><br><strong>Commerce équitable</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="logo" style="color: var(--sand);">OLIVAS DE TACNA</div>
+      <div class="socials">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <p style="opacity: 0.7;" data-i18n="footer.copyright">© 2025 — Exportateur d'olives péruviennes vers l'Amérique latine</p>
+      <p style="font-size: 0.9rem;" data-i18n="footer.location">Tacna · Pérou · 🇵🇪</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/tracking.js"></script>
+  <script src="js/telegram.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

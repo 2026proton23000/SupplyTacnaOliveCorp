@@ -1,0 +1,92 @@
+{
+  "menu": {
+    "home": "Accueil",
+    "catalog": "Catalogue",
+    "expertise": "Expertise",
+    "logistics": "Logistique",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero_title": "Olives de Tacna",
+    "hero_subtitle": "L'authentique saveur du Pérou",
+    "hero_tagline": "Export direct vers l'Amérique Latine",
+    "cta_quote": "Demander un devis",
+    "cta_discover": "Découvrir nos lots",
+    "markets": "Colombie · Chili · Équateur · Bolivie"
+  },
+  "origin": {
+    "tag": "Vallée de Tacna",
+    "title": "Le terroir unique du désert fertile",
+    "desc1": "À l'extrême sud du Pérou, baignée par le Pacifique et nourrie par les eaux andines, Tacna produit des olives d'une qualité exceptionnelle. Notre stock permanent garantit une disponibilité immédiate pour les acheteurs d'Amérique latine.",
+    "desc2": "Logistique maîtrisée – ports d'Ilo et Matarani, liaisons rapides vers la Colombie, le Chili et toute la région.",
+    "desc3": "Traçabilité complète – de l'arbre à l'export."
+  },
+  "products": {
+    "title": "Nos lots d'olives",
+    "subtitle": "Disponibles en vrac, saumure ou huile, conditionnement adapté à l'export.",
+    "black": {
+      "name": "Olives noires",
+      "desc": "Variété Sevillana et Criolla, pleine maturité, chair ferme. Idéales pour conserve et transformation.",
+      "long_desc": "Nos olives noires sont récoltées à pleine maturité dans la vallée de Tacna. Leur chair ferme et leur goût fruité en font un produit idéal pour la transformation (tapénades, conserves) ou la consommation directe."
+    },
+    "green": {
+      "name": "Olives vertes",
+      "desc": "Récolte précoce, cassantes et savoureuses. Parfaites pour apéritif et export haut de gamme.",
+      "long_desc": "Récoltées avant complète maturité, ces olives vertes offrent une texture croquante et une saveur légèrement amandée. Idéales pour l'apéritif, la farce ou l'export haut de gamme."
+    },
+    "oil": {
+      "name": "Huile d'olive vierge",
+      "desc": "Première pression à froid, stock en cuves inox. Conditionnement possible en citernes ou bidons.",
+      "long_desc": "Première pression à froid, extraite dans les 24h suivant la récolte. Notre huile se distingue par son fruité vert, ses arômes d'artichaut et d'herbe fraîche. Idéale pour l'industrie alimentaire et les épiceries fines."
+    },
+    "bulk": {
+      "name": "Vrac & logistique",
+      "desc": "Barils de 200L, caisses plastique, sacs sous vide. Volumes adaptés aux importateurs.",
+      "long_desc": "Pour les transformateurs et importateurs, nous proposons des lots en vrac de différentes tailles, avec une traçabilité complète. Nous adaptons le conditionnement à vos besoins : barils, caisses plastique, sacs sous vide, big bags."
+    }
+  },
+  "markets": {
+    "title": "Marchés prioritaires",
+    "subtitle": "Nous livrons principalement en Amérique latine, avec une présence renforcée dans ces pays :",
+    "colombia": "Colombie",
+    "chile": "Chili",
+    "ecuador": "Équateur",
+    "bolivia": "Bolivie",
+    "peru": "Pérou",
+    "other": "Et tout autre pays d'Amérique latine sur demande."
+  },
+  "why": {
+    "title": "Pourquoi nous ?",
+    "stock": "tonnes disponibles",
+    "exp": "ans d'expérience",
+    "varieties": "variétés",
+    "traceability": "traçable",
+    "stock_desc": "en stock permanent à Tacna",
+    "exp_desc": "export vers l'Amérique latine",
+    "varieties_desc": "de table et à huile",
+    "traceability_desc": "origine contrôlée"
+  },
+  "contact": {
+    "title": "Parlons affaires",
+    "name": "Nom / Entreprise",
+    "email": "E-mail",
+    "country": "Pays de destination",
+    "message": "Quantité recherchée, variété...",
+    "send": "Envoyer la demande",
+    "hours": "Horaires d'attention",
+    "hours_detail": "Lun-Ven 9h-18h (GMT-5)",
+    "response": "Réponse sous 24h ouvrées"
+  },
+  "footer": {
+    "copyright": "© 2025 — Exportateur d'olives péruviennes vers l'Amérique latine",
+    "location": "Tacna · Pérou · 🇵🇪"
+  },
+  "catalog": {
+    "title": "Notre gamme export",
+    "subtitle": "Des olives et huiles d'exception, conditionnées pour l'international",
+    "request_quote": "Demander un devis",
+    "certifications": {
+      "title": "Nos certifications"
+    }
+  }
+}

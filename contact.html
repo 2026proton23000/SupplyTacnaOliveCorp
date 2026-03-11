@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Olives de Tacna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Styles spécifiques à la page contact */
+    .contact-page {
+      margin-top: 120px;
+      padding: 3rem 0;
+    }
+    .contact-grid-enhanced {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      background: white;
+      border-radius: 40px;
+      padding: 3rem;
+      box-shadow: 0 30px 50px -20px #2b3a2b40;
+    }
+    .contact-info-block {
+      background: var(--sand);
+      padding: 2rem;
+      border-radius: 30px;
+    }
+    .contact-info-block i {
+      color: var(--olive);
+      font-size: 1.5rem;
+      width: 40px;
+    }
+    .contact-info-block p {
+      margin: 1.2rem 0;
+      display: flex;
+      align-items: center;
+    }
+    .map-container {
+      margin-top: 2rem;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 250px;
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .form-container {
+      background: white;
+    }
+    @media (max-width: 900px) {
+      .contact-grid-enhanced {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">OLIVAS DE TACNA<span data-i18n="home.hero_subtitle">l'authentique saveur du Pérou</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" data-i18n="menu.home">Accueil</a></li>
+      <li><a href="catalogo.html" data-i18n="menu.catalog">Catalogue</a></li>
+      <li><a href="expertise.html" data-i18n="menu.expertise">Expertise</a></li>
+      <li><a href="logistica.html" data-i18n="menu.logistics">Logistique</a></li>
+      <li><a href="contact.html" data-i18n="menu.contact">Contact</a></li>
+      <li><button class="lang-switch" data-lang="fr">FR</button> <button class="lang-switch" data-lang="es">ES</button></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+  </nav>
+
+  <section class="contact-page">
+    <div class="container">
+      <div class="contact-grid-enhanced">
+        <!-- Bloc informations -->
+        <div class="contact-info-block">
+          <h2 data-i18n="contact.title" style="margin-top: 0;">Parlons affaires</h2>
+          <p><i class="fas fa-phone-alt"></i> +51 1 234 5678</p>
+          <p><i class="fas fa-envelope"></i> export@olivastacna.pe</p>
+          <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact.address">Zona Franca, Tacna, Pérou</span></p>
+          
+          <div style="margin: 2rem 0;">
+            <h4 data-i18n="contact.hours">Horaires d'attention</h4>
+            <p data-i18n="contact.hours_detail">Lun-Ven 9h-18h (GMT-5)</p>
+          </div>
+
+          <p><i class="fas fa-globe"></i> <span data-i18n="contact.response">Réponse sous 24h ouvrées</span></p>
+
+          <!-- Carte OpenStreetMap (modifiable) -->
+          <div class="map-container">
+            <iframe 
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-70.3333%2C-18.0833%2C-70.2333%2C-18.0167&amp;layer=mapnik&amp;marker=-18.05%2C-70.2833" 
+              allowfullscreen 
+              loading="lazy">
+            </iframe>
+          </div>
+
+          <!-- Dans le bloc contact-info-block, après la carte -->
+          <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://wa.me/51912345678" target="_blank" class="btn-whatsapp">
+              <i class="fab fa-whatsapp"></i> <span data-i18n="contact.whatsapp">Nous écrire sur WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Formulaire (identique à celui de l'index) -->
+        <div class="form-container">
+          <form id="contactForm" method="post">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Nom / Entreprise" data-i18n-placeholder="contact.name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="E-mail" data-i18n-placeholder="contact.email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" name="country" placeholder="Pays de destination" data-i18n-placeholder="contact.country">
+            </div>
+            <div class="form-group">
+              <textarea name="message" rows="5" placeholder="Quantité recherchée, variété..." data-i18n-placeholder="contact.message"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <i class="fas fa-paper-plane"></i> <span data-i18n="contact.send">Envoyer la demande</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="logo" style="color: var(--sand);">OLIVAS DE TACNA</div>
+      <p style="opacity: 0.7;" data-i18n="footer.copyright">© 2025 — Exportateur d'olives péruviennes vers l'Amérique latine</p>
+      <p style="font-size: 0.9rem;" data-i18n="footer.location">Tacna · Pérou · 🇵🇪</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/tracking.js"></script>
+  <script src="js/telegram.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

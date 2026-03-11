@@ -88,5 +88,28 @@
     "certifications": {
       "title": "Nuestras certificaciones"
     }
+  },
+  "logistics": {
+    "title": "Nuestra logística",
+    "desc": "Disponemos de una plataforma logística en Tacna, cerca de los puertos de Ilo (PE) y Arica (CL). Organizamos envíos marítimos y terrestres a toda América Latina con socios confiables.",
+    "items": {
+      "maritime": "Flete marítimo contenerizado y grupaje",
+      "land": "Transporte terrestre a países vecinos (Bolivia, Chile)",
+      "storage": "Almacenamiento con temperatura controlada",
+      "docs": "Gestión de documentos de exportación (certificados, origen)"
+    }
+  },
+    "contact": {
+    "title": "Hablemos de negocios",
+    "name": "Nombre / Empresa",
+    "email": "Correo electrónico",
+    "country": "País de destino",
+    "message": "Cantidad buscada, variedad...",
+    "send": "Enviar solicitud",
+    "hours": "Horario de atención",
+    "hours_detail": "Lun-Vie 9h-18h (GMT-5)",
+    "response": "Respuesta en 24 horas hábiles",
+    "address": "Zona Franca, Tacna, Perú",
+    "whatsapp": "Escríbenos por WhatsApp"
   }
 }

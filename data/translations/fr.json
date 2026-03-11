@@ -88,5 +88,28 @@
     "certifications": {
       "title": "Nos certifications"
     }
+  },
+    "logistics": {
+    "title": "Notre logistique",
+    "desc": "Nous disposons d'une plateforme logistique à Tacna, à proximité des ports d'Ilo (PE) et Arica (CL). Nous organisons des expéditions maritimes et terrestres vers toute l'Amérique latine avec des partenaires fiables.",
+    "items": {
+      "maritime": "Fret maritime conteneurisé et groupage",
+      "land": "Transport terrestre vers les pays voisins (Bolivie, Chili)",
+      "storage": "Stockage sous température contrôlée",
+      "docs": "Gestion des documents d'exportation (certificats, origine)"
+    }
+  },
+    "contact": {
+    "title": "Parlons affaires",
+    "name": "Nom / Entreprise",
+    "email": "E-mail",
+    "country": "Pays de destination",
+    "message": "Quantité recherchée, variété...",
+    "send": "Envoyer la demande",
+    "hours": "Horaires d'attention",
+    "hours_detail": "Lun-Ven 9h-18h (GMT-5)",
+    "response": "Réponse sous 24h ouvrées",
+    "address": "Zona Franca, Tacna, Pérou",
+    "whatsapp": "Nous écrire sur WhatsApp"
   }
 }

@@ -53,9 +53,53 @@
     .form-container {
       background: white;
     }
+    /* Styles WhatsApp améliorés */
+    .whatsapp-wrapper {
+      margin-top: 2rem;
+      border-top: 1px solid rgba(95,111,82,0.2);
+      padding-top: 2rem;
+      text-align: center;
+    }
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+      background: #25D366;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 60px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+      min-width: 240px;
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+    }
+    .btn-whatsapp i {
+      font-size: 1.8rem;
+    }
+    .btn-whatsapp:hover {
+      background: #128C7E;
+      transform: translateY(-3px);
+      box-shadow: 0 15px 25px rgba(37, 211, 102, 0.4);
+      border-color: white;
+    }
+    .btn-whatsapp:active {
+      transform: translateY(0);
+    }
+    .whatsapp-small {
+      font-size: 0.85rem;
+      margin-top: 0.8rem;
+      opacity: 0.7;
+      color: var(--dark);
+    }
     @media (max-width: 900px) {
       .contact-grid-enhanced {
         grid-template-columns: 1fr;
+      }
+      .btn-whatsapp {
+        width: 100%;
       }
     }
   </style>
@@ -80,9 +124,9 @@
         <!-- Bloc informations -->
         <div class="contact-info-block">
           <h2 data-i18n="contact.title" style="margin-top: 0;">Parlons affaires</h2>
-          <p><i class="fas fa-phone-alt"></i> +51 1 234 5678</p>
-          <p><i class="fas fa-envelope"></i> export@olivastacna.pe</p>
-          <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact.address">Zona Franca, Tacna, Pérou</span></p>
+          <p><i class="fas fa-phone-alt"></i> +51 913 793 195</p>
+          <p><i class="fas fa-envelope"></i> mundo.aove.tacna@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact.address">Tacna, Pérou</span></p>
           
           <div style="margin: 2rem 0;">
             <h4 data-i18n="contact.hours">Horaires d'attention</h4>
@@ -91,7 +135,7 @@
 
           <p><i class="fas fa-globe"></i> <span data-i18n="contact.response">Réponse sous 24h ouvrées</span></p>
 
-          <!-- Carte OpenStreetMap (modifiable) -->
+          <!-- Carte OpenStreetMap -->
           <div class="map-container">
             <iframe 
               src="https://www.openstreetmap.org/export/embed.html?bbox=-70.3333%2C-18.0833%2C-70.2333%2C-18.0167&amp;layer=mapnik&amp;marker=-18.05%2C-70.2833" 
@@ -100,15 +144,17 @@
             </iframe>
           </div>
 
-          <!-- Dans le bloc contact-info-block, après la carte -->
-          <div style="text-align: center; margin-top: 2rem;">
-            <a href="https://wa.me/51912345678" target="_blank" class="btn-whatsapp">
-              <i class="fab fa-whatsapp"></i> <span data-i18n="contact.whatsapp">Nous écrire sur WhatsApp</span>
+          <!-- Bouton WhatsApp amélioré -->
+          <div class="whatsapp-wrapper">
+            <a href="https://wa.me/51913793195" target="_blank" class="btn-whatsapp">
+              <i class="fab fa-whatsapp"></i>
+              <span data-i18n="contact.whatsapp">Nous écrire sur WhatsApp</span>
             </a>
+            <div class="whatsapp-small" data-i18n="contact.whatsapp_small">Réponse rapide sous 24h</div>
           </div>
-        </div>
+        </div> <!-- fin contact-info-block -->
 
-        <!-- Formulaire (identique à celui de l'index) -->
+        <!-- Formulaire -->
         <div class="form-container">
           <form id="contactForm" method="post">
             <div class="form-group">
@@ -128,8 +174,8 @@
             </button>
           </form>
         </div>
-      </div>
-    </div>
+      </div> <!-- fin contact-grid-enhanced -->
+    </div> <!-- fin container -->
   </section>
 
   <footer>

@@ -18,12 +18,12 @@
     "tag": "Valle de Tacna",
     "title": "El terroir único del desierto fértil",
     "desc1": "En el extremo sur del Perú, bañada por el Pacífico y alimentada por las aguas andinas, Tacna produce aceitunas de una calidad excepcional. Nuestro stock permanente garantiza disponibilidad inmediata para los compradores de América Latina.",
-    "desc2": "Logística controlada – puertos de Ilo y Matarani, conexiones rápidas a Colombia, Chile y toda la región.",
+    "desc2": "Logística controlada – puertos de Ilo (PE) y Arica (CL), conexiones rápidas a Colombia, Chile y toda la región.",
     "desc3": "Trazabilidad completa – del árbol a la exportación."
   },
   "products": {
     "title": "Nuestros lotes de aceitunas",
-    "subtitle": "Disponibles a granel, en salmuera o aceite, embalaje adaptado para la exportación.",
+    "subtitle": "Disponibles a granel, en salmuera, embalaje adaptado para la exportación.",
     "black": {
       "name": "Aceitunas negras",
       "desc": "Variedad Sevillana y Criolla, madurez plena, carne firme. Ideales para conserva y transformación.",
@@ -33,11 +33,6 @@
       "name": "Aceitunas verdes",
       "desc": "Cosecha temprana, crujientes y sabrosas. Perfectas para aperitivo y exportación de alta gama.",
       "long_desc": "Cosechadas antes de la madurez completa, estas aceitunas verdes ofrecen una textura crujiente y un sabor ligeramente almendrado. Ideales para aperitivos, relleno o exportación de alta gama."
-    },
-    "oil": {
-      "name": "Aceite de oliva virgen",
-      "desc": "Primera presión en frío, stock en cubas de acero inox. Envasado posible en cisternas o bidones.",
-      "long_desc": "Primera presión en frío, extraída dentro de las 24 horas posteriores a la cosecha. Nuestro aceite destaca por su frutado verde, aromas a alcachofa y hierba fresca. Ideal para la industria alimentaria y tiendas gourmet."
     },
     "bulk": {
       "name": "Granel y logística",
@@ -63,7 +58,7 @@
     "traceability": "trazable",
     "stock_desc": "en stock permanente en Tacna",
     "exp_desc": "exportación a América Latina",
-    "varieties_desc": "de mesa y aceite",
+    "varieties_desc": "de mesa",
     "traceability_desc": "origen controlado"
   },
   "contact": {
@@ -83,7 +78,7 @@
   },
   "catalog": {
     "title": "Nuestra gama de exportación",
-    "subtitle": "Aceitunas y aceites excepcionales, envasados para la exportación",
+    "subtitle": "Aceitunas excepcionales, envasados para la exportación",
     "request_quote": "Solicitar presupuesto",
     "certifications": {
       "title": "Nuestras certificaciones"
@@ -109,7 +104,65 @@
     "hours": "Horario de atención",
     "hours_detail": "Lun-Vie 9h-18h (GMT-5)",
     "response": "Respuesta en 24 horas hábiles",
-    "address": "Zona Franca, Tacna, Perú",
-    "whatsapp": "Escríbenos por WhatsApp"
+    "address": "Tacna, Perú",
+    "whatsapp_small": "Respuesta rápida por WhatsApp",
+    "contact.whatsapp": "Contacto"
+
+  },
+    "expertise": {
+    "title": "Nuestra experiencia",
+    "desc": "Con 10 años de experiencia en la exportación de aceitunas peruanas, dominamos todas las etapas de la cadena de suministro. Nuestro equipo con sede en Tacna selecciona rigurosamente las mejores aceitunas de productores locales, garantizando prácticas sostenibles y trazabilidad completa.",
+    "items": {
+      "quality": "Control de calidad continuo",
+      "packaging": "Embalaje adaptado a normas internacionales",
+      "customs": "Asesoramiento aduanero y documental",
+      "service": "Atención al cliente en francés, español e inglés"
+    },
+    "image_alt": "Experiencia de nuestro equipo en Tacna"
+  },
+    "catalog": {
+    "title": "Nuestra gama de exportación",
+    "subtitle": "Aceitunas excepcionales, envasadas para la exportación",
+    "request_quote": "Solicitar presupuesto",
+    "certifications": {
+      "title": "Nuestras certificaciones"
+    },
+    "specs_title": "Especificaciones técnicas",
+    "options_title": "Opciones disponibles",
+    "varieties_label": "Variedades",
+    "calibers_label": "Calibres",
+    "maturity_label": "Madurez",
+    "packaging_label": "Envasado",
+    "pitted_label": "Deshuesado",
+    "varieties_value_black": "Sevillana, Criolla, Azapa",
+    "calibers_value_black": "180/200, 200/220, 220/240 (piezas/kg)",
+    "maturity_value_black": "Negra 100%",
+    "packaging_value_black": "Salmuera 8-10%, conservantes naturales",
+    "varieties_value_green": "Sevillana, Gordal",
+    "calibers_value_green": "160/180, 180/200, 200/220",
+    "pitted_value_green": "Bajo pedido (posibles rellenos)",
+    "packaging_value_green": "Salmuera, agua + sal.",
+    "vacuum_bags": "Bolsas al vacío",
+    "barrels_200l": "Barriles 200L",
+    "crates_10kg": "Cajas 10kg",
+    "glass_jars_b2b": "Tarros de vidrio (B2B)",
+    "food_barrels": "Barriles alimentarios",
+    "food_barrels_value": "200L con doble bolsa",
+    "plastic_crates": "Cajas de plástico",
+    "plastic_crates_value": "10kg, 20kg, apilables",
+    "big_bags": "Big bags",
+    "big_bags_value": "500kg a 1000kg (aceitunas secas)",
+    "palletization": "Paletización",
+    "palletization_value": "Palés EUR o estándar",
+    "pallets": "Palés",
+    "big_bags_icon": "Big bags",
+    "custom_lots": "Lotes a medida",
+    "alt_black": "Aceitunas negras de Tacna",
+    "alt_green": "Aceitunas verdes de Tacna",
+    "alt_bulk": "Envasado a granel",
+    "certif_globalgap": "GlobalG.A.P.",
+    "certif_organic": "Agricultura ecológica",
+    "certif_haccp": "HACCP",
+    "certif_fairtrade": "Comercio justo"
   }
 }

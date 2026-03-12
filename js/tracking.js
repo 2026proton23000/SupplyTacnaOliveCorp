@@ -1,5 +1,4 @@
-// Tracking vers Google Sheets (version enrichie)
-const TRACKING_URL = 'https://script.google.com/macros/s/AKfycbydvc54j1Uiirw-dW2vf23UWhmxeTgNOS9Q-JXPN6clGeKBLzz34ifT807T4mw0khttps://script.google.com/macros/s/AKfycbwwgIYlizK7eeZgzjmgLzmV_GRsN-zNkhKZ2CQMHmTC6Pe2ZzOLX47ILaPpSWI2klV7/execKrS/exec';
+const TRACKING_URL = 'https://script.google.com/macros/s/AKfycbz7grflykVef5z7sJU92OuaWSqtKSTEuv3S2f0W50o5qfvPpwXSLN3FEMQQDrrZN4B6UQ/exec';
 
 // Génération ou récupération d'un identifiant de session
 function getSessionId() {
@@ -29,8 +28,7 @@ function getScreenSize() {
 // Fonction principale de tracking
 async function trackEvent(eventType, eventData = {}) {
   try {
-    const data = {
-      timestamp: new Date().toISOString(),
+    const params = new URLSearchParams({
       session_id: getSessionId(),
       event_type: eventType,
       page: window.location.pathname,
@@ -40,14 +38,14 @@ async function trackEvent(eventType, eventData = {}) {
       user_agent: getSimpleUserAgent(),
       screen_size: getScreenSize(),
       ...eventData
-    };
+    });
     
     // Envoi silencieux
     fetch(TRACKING_URL, {
       method: 'POST',
       mode: 'no-cors',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data)
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: params
     }).catch(err => console.warn('Tracking error:', err));
   } catch (e) {
     console.warn('Tracking failed', e);
@@ -63,6 +61,26 @@ function trackFormSubmit(formData) {
     form_type: formData.get('_formType') || 'contact',
     form_country: formData.get('country') || '',
     form_message_length: (formData.get('message') || '').length,
-    extra: { name_provided: !!formData.get('name') }
+    extra: JSON.stringify({ name_provided: !!formData.get('name') })
   });
 }
+
+// Track clic sur CTA (appelée depuis app.js)
+function trackCtaClick(buttonText, location, extra = {}) {
+  trackEvent('cta_click', {
+    button_text: buttonText,
+    button_location: location,
+    extra: JSON.stringify(extra)
+  });
+}
+
+// Track clic WhatsApp spécifique
+function trackWhatsAppClick() {
+  trackCtaClick('WhatsApp', 'whatsapp_button');
+}
+
+// Exposer les fonctions globalement pour app.js
+window.trackEvent = trackEvent;
+window.trackFormSubmit = trackFormSubmit;
+window.trackCtaClick = trackCtaClick;
+window.trackWhatsAppClick = trackWhatsAppClick;

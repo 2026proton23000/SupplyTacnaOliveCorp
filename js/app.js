@@ -62,7 +62,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   // 5. Tracking des clics sur les boutons importants
-  // Sélecteurs des éléments à tracker
   const trackableSelectors = [
     { selector: '.btn, .btn-product, .btn-outline', location: 'generic' },
     { selector: '.btn-whatsapp', location: 'whatsapp' },
@@ -74,11 +73,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   trackableSelectors.forEach(item => {
     document.querySelectorAll(item.selector).forEach(el => {
       el.addEventListener('click', (e) => {
-        // Ignorer les ancres internes
         const href = el.getAttribute('href');
         if (href && href.startsWith('#')) return;
 
-        // Déterminer le texte du bouton
         let buttonText = '';
         if (el.tagName === 'BUTTON' || el.tagName === 'A') {
           buttonText = el.innerText.trim() || el.getAttribute('data-i18n') || 'unknown';
@@ -86,7 +83,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           buttonText = el.innerText.trim();
         }
 
-        // Déterminer l'emplacement précis si possible
         let location = item.location;
         if (location === 'generic') {
           if (el.closest('.hero')) location = 'hero';
@@ -97,13 +93,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           else location = 'other';
         }
 
-        // Appeler la fonction de tracking globale
-        if (typeof trackEvent !== 'undefined') {
-          trackEvent('cta_click', {
-            button_text: buttonText,
-            button_location: location,
-            extra: { href: el.href || null }
-          });
+        if (typeof trackCtaClick !== 'undefined') {
+          trackCtaClick(buttonText, location, { href: el.href || null });
         }
       });
     });
